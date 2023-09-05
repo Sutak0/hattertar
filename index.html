@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>orai_munka</title>
+</head>
+<body>
+    <label for="Kapacitas">Kapacitás: </label>
+    <input type="number" min="0" id="osszeg"> 
+    <select name="mertek" id="mertek">
+    <option value="Mb">Mb</option>
+    <option value="Mb">Gb</option>
+    <option value="Mb">Tb</option>
+    </select>
+    <br>
+    <label for="Atvitel">Átviteli sebesség: </label> 
+    <input type="range" min="10" max="5000" value="3220" id="csuszka" onchange="Csuszka()"> 
+    <select name="ujertek" id="ujertek"> 
+        <option value="Mbps">Mbps</option>
+        <option value="KBps">KBps</option>
+        <option value="MBps">MBps</option>
+        <option value="GBps">GBps</option>
+    </select>
+    <p id="kontener"></p>
+    <br>
+    <label for="" id="eredmeny">0</label>
+    <input type="submit" value="Számol" onclick="Szamolas()">
+    <script src="java.js"></script>
+</body>
+</html>
